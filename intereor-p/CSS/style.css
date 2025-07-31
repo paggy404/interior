@@ -1,0 +1,354 @@
+/* 全域 */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-font-family: "DM Serif Display", serif;
+    --content-font-family: "Jost", sans-serif;
+    --text-color-color: #292F36;
+
+}
+
+.section {
+    margin-bottom: 5rem;
+}
+
+/* -----------------------------------------------News */
+.news {
+    width: 100%;
+}
+
+.cotainer {
+    width: 80%;
+    margin: auto;
+}
+
+.title-group {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 1.875rem;
+    font-family: var(--title-font-family);
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    width: 100%;
+    font-size: 1.125rem;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+    font-family: var(--content-font-family);
+    margin-bottom: 30px;
+}
+
+.article-list {
+    width: 100%;
+}
+
+.article-item {
+    width: 100%;
+    padding: 20px;
+    border-radius: 60px;
+    border: #E7E7E7 solid 1px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.pic-fram {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+}
+
+.pic {
+    width: 100%;
+}
+
+
+.tag {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width: 125px;
+    font-family: var(--content-font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: white;
+    padding: 10px 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.article-title {
+    font-family: var(--title-font-family);
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.link-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-family: var(--content-font-family);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.read {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #F4F0EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #292F36;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*-------------------------------------------------
+work
+------------------------------------------------- */
+.work {
+    width: 100%;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.work {
+    width: 100%;
+    padding: 80px 0;
+}
+
+
+.work h3 {
+    font-family: var(--title-font-family);
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--text-color-color);
+    text-align: center;
+    padding-bottom: 1.25rem;
+}
+
+.work p {
+    font-family: var(--content-font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color-color);
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2.8125rem;
+}
+
+.work ol {
+    list-style: none;
+    width: 100%;
+}
+
+.work a {
+    font-size: 1.125rem;
+    font-family: var(--content-font-family);
+    text-decoration: none;
+    color: var(--text-color-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work a i {
+    color: #CDA274;
+    margin-left: .3125rem;
+}
+
+
+.work-item {
+    width: 100%;
+    margin-bottom: 2.1875rem;
+}
+
+
+/* -----------------------------------------------Banner */
+
+.banner {
+    width: 100%;
+    height: 500px;
+    padding: 50px 0;
+    background: url('../images/phone/Banner.png') no-repeat;
+    background-size: auto 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 150px;
+
+}
+
+.banner .container {
+    width: 80%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+
+}
+
+.hero-title {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+
+.desc {
+    font-size: 1rem;
+    letter-spacing: .0625rem;
+    line-height: 1.2;
+    margin: 1.25rem 0;
+    font-family: "Noto Sans TC";
+
+}
+
+.btn {
+    background-color: #292F36;
+    border-radius: 18px;
+    color: white;
+    font-size: 1.125rem;
+    padding: 20px 30px;
+    font-family: var(--content-font-family);
+    border: none;
+}
+
+.btn i {
+    color: #CDA274;
+}
+
+
+@media screen and (min-width: 481px) {
+
+
+    .section {
+        margin-bottom: 13.125rem;
+    }
+
+    .banner {
+        width: 100%;
+        height: 500px;
+        background: url('../images/Banner.jpg') no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+        border-bottom-left-radius: 180px;
+
+
+    }
+
+    .banner .container {
+        width: 70%;
+    }
+
+    .section-title {
+        font-size: 3.125rem;
+    }
+
+    .sub-title {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .article-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    .article-item {
+        width: 48%;
+    }
+
+
+    .work ol {
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 835px) {
+
+
+
+    .banner {
+        width: 100%;
+        height: 750px;
+        background: url('../images/Banner.jpg') no-repeat;
+        background-size: cover;
+        padding: 66px 100px;
+        border-bottom-left-radius: 360px;
+        display: flex;
+        justify-content: left;
+
+
+    }
+
+    .banner .container {
+        width: 50%;
+        background-color: transparent;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .sub-title {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .article-item {
+        width: 32%;
+    }
+
+    .article-item:hover {
+        background-color: #E7E7E7;
+    }
+
+    .read:hover {
+        background-color: #ffffff;
+    }
+
+    .btn:hover {
+        background-color: #CDA274;
+        color: white;
+
+    }
+
+    .button i:hover {
+        color: #292F36;
+    }
