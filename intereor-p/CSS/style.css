@@ -144,6 +144,21 @@ section {
 }
 
 /*-------------------------------------------------
+    clients-wrapper
+    ------------------------------------------------- */
+.clients-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+}
+
+.clients-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/*-------------------------------------------------
 about
 ------------------------------------------------- */
 .about-pic {
@@ -395,12 +410,13 @@ about
     /*-------------------------------------------------
     clients-wrapper
     ------------------------------------------------- */
+
     .clients-wrapper {
-        display: flex;
-        gap: 20px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 10px;
+        overflow: hidden;
+        /* 隱藏捲軸 */
+        justify-content: space-between;
+        /* 五個 logo 等分排列 */
+        flex-wrap: nowrap;
     }
 
     /*-------------------------------------------------
@@ -469,9 +485,9 @@ banner
     /*-------------------------------------------------
     clients-wrapper
     ------------------------------------------------- */
-    .clients-wrapper::-webkit-scrollbar {
-        display: none;
-        /* 隱藏捲軸樣式 */
+    .clients-wrapper {
+        justify-content: space-evenly;
+        gap: 30px;
     }
 
     /*-------------------------------------------------
