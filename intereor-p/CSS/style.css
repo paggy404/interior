@@ -11,26 +11,33 @@
     --title-font-family: "DM Serif Display", serif;
     --content-font-family: "Jost", sans-serif;
     --text-color-color: #292F36;
+    --btn-color-color: #F4F0EC;
+    --btn-icon-color: #CDA274;
 
 }
 
-.section {
-    margin-bottom: 5rem;
-}
-
-/* -----------------------------------------------News */
-.news {
+section {
+    margin: auto;
+    padding: 80px 0;
     width: 100%;
 }
 
-.cotainer {
-    width: 80%;
+.contents {
+    font-family: var(--content-font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color-color);
+}
+
+.container {
+    width: 100%;
     margin: auto;
+    padding: 0 1.5rem;
 }
 
 .title-group {
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -44,12 +51,19 @@
 
 .sub-title {
     width: 100%;
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
     line-height: 1.2rem;
     letter-spacing: 1px;
     font-family: var(--content-font-family);
     margin-bottom: 30px;
 }
+
+/* -----------------------------------------------News */
+/* .news {
+    width: 100%;
+} */
+
+
 
 .article-list {
     width: 100%;
@@ -129,6 +143,70 @@
     transition: all 0.5s ease-in-out;
 }
 
+/*-------------------------------------------------
+about
+------------------------------------------------- */
+.about-pic {
+    width: 100%;
+    padding-bottom: 1.25rem;
+
+}
+
+.about-pic img {
+    width: 100%;
+    border-radius: 0 9.375rem 0 6.25rem;
+}
+
+.about .title-group {
+    padding-bottom: 3.125rem;
+}
+
+.about h5 {
+    font-family: var(--content-font-family);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.about h6 {
+    font-family: var(--content-font-family);
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.phone-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.125rem;
+}
+
+.phone-box a {
+    text-decoration: none;
+    width: 70px;
+    height: 70px;
+    background-color: var(--btn-color-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.phone-box i {
+    font-size: 35px;
+    color: var(--btn-icon-color);
+}
+
+.phone-text {
+    padding-left: 1.25rem;
+}
+
+.about-btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 
 /*-------------------------------------------------
 work
@@ -136,17 +214,6 @@ work
 .work {
     width: 100%;
 }
-
-.container {
-    width: 70%;
-    margin: auto;
-}
-
-.work {
-    width: 100%;
-    padding: 80px 0;
-}
-
 
 .work h3 {
     font-family: var(--title-font-family);
@@ -160,19 +227,16 @@ work
 }
 
 .work p {
-    font-family: var(--content-font-family);
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--text-color-color);
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding-bottom: 2.8125rem;
 }
 
 .work ol {
     list-style: none;
-    width: 100%;
+    width: 70%;
+    margin: auto;
 }
 
 .work a {
@@ -193,7 +257,7 @@ work
 
 .work-item {
     width: 100%;
-    margin-bottom: 2.1875rem;
+    padding-bottom: 2.1875rem;
 }
 
 
@@ -238,7 +302,7 @@ work
 .btn {
     background-color: #292F36;
     border-radius: 18px;
-    color: white;
+    color: var(--btn-color-color);
     font-size: 1.125rem;
     padding: 20px 30px;
     font-family: var(--content-font-family);
@@ -246,7 +310,7 @@ work
 }
 
 .btn i {
-    color: #CDA274;
+    color: var(--btn-icon-color);
 }
 
 
@@ -257,6 +321,13 @@ work
         margin-bottom: 13.125rem;
     }
 
+    .container {
+        width: 60%;
+    }
+
+    /*-------------------------------------------------
+banner 
+------------------------------------------------- */
     .banner {
         width: 100%;
         height: 500px;
@@ -274,13 +345,67 @@ work
 
     .section-title {
         font-size: 3.125rem;
+        text-align: center;
     }
 
     .sub-title {
         width: 90%;
         margin: auto;
         margin-bottom: 30px;
+        text-align: center;
     }
+
+
+    /*-------------------------------------------------
+about
+------------------------------------------------- */
+
+    .about .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .about .section-title {
+        text-align: left;
+    }
+
+    .about-pic {
+        width: 90%;
+        padding-left: 6.25rem;
+        order: 1;
+    }
+
+    .title-group {
+        text-align: left;
+    }
+
+    .phone-box {
+        justify-content: flex-start;
+    }
+
+    .about-btn {
+        justify-content: flex-start;
+    }
+
+    .about-contents {
+        width: 37.5rem;
+        order: 0;
+    }
+
+    /*-------------------------------------------------
+    clients-wrapper
+    ------------------------------------------------- */
+    .clients-wrapper {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+
+    /*-------------------------------------------------
+news
+------------------------------------------------- */
 
     .article-list {
         display: flex;
@@ -293,15 +418,25 @@ work
         width: 48%;
     }
 
-
+    /*-------------------------------------------------
+work
+------------------------------------------------- */
     .work ol {
         display: flex;
-    }
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 0;
 
+        .work-item {
+            padding: 2.5rem;
+        }
+    }
 }
 
 @media screen and (min-width: 835px) {
-
+    /*-------------------------------------------------
+banner
+------------------------------------------------- */
 
 
     .banner {
@@ -331,6 +466,18 @@ work
         margin-bottom: 30px;
     }
 
+    /*-------------------------------------------------
+    clients-wrapper
+    ------------------------------------------------- */
+    .clients-wrapper::-webkit-scrollbar {
+        display: none;
+        /* 隱藏捲軸樣式 */
+    }
+
+    /*-------------------------------------------------
+news
+------------------------------------------------- */
+
     .article-item {
         width: 32%;
     }
@@ -339,11 +486,13 @@ work
         background-color: #E7E7E7;
     }
 
+
+
     .read:hover {
         background-color: #ffffff;
     }
 
-    .btn:hover {
+    .banner .btn:hover {
         background-color: #CDA274;
         color: white;
 
